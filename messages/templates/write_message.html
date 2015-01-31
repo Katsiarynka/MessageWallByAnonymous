@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	{{ block.super }}
+	<script type="text/javascript" src="{{ MEDIA_URL }}js/write_message.js"></script>
+	<script src="{{ MEDIA_URL }}js/cancelWritingMessage.js"></script>
+	
+	{% block title %}
+		<title>Write Message</title>
+	{% endblock %}
+{% endblock %}
+
+
+
+	
+{% block content %}
+
+<form id="message_form"  method="post" action="{{ HTTP_REFERER }}">
+	{% csrf_token %}
+	{{ form.non_field_errors }}
+	{{ form.as_p }}
+	<input type="submit" id="submit" value="Добавить" >
+	<input type="button" id="cancel" onclick="cancelWritingMessage();"  value="Отменить">
+</form>
+{% endblock %}

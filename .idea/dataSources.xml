@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="164920640">
+    <data-source source="LOCAL" name="Django default" uuid="a150823b-14d4-4442-9aa3-80905aa702bd">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:E:\PythonWorkspace\Message_Wall_by_Anonymous\database\message_wall_by_anonymous.sqlite</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
