@@ -71,7 +71,7 @@ function show_childs_or_tree(key, id){
 		success: function(resp) {
 			if(resp.messages){
 				var id = document.getElementById('message_id_' + resp.id);
-				var parent = document.getElementById('messages');
+				var parent = document.getElementById('comments');
 				var div = document.getElementById('div_for_form')
 				for (var i=resp.messages.length-1; i>=0; i--){
 					var message = create_mssg_child(resp.messages[i], key=="trees");
