@@ -1,32 +1,31 @@
+Anonymous message wall.
+It is necessary to implement a simple message feed with tree-like comment messages.
+Creating messages in the feed and adding is possible for all visitors.
 
-Анонимная стена сообщений.
-Необходимо реализовать простую ленту сообщений с древовидными сообщениями-комментариями.
-Создание сообщений в ленте и добавление возможно всеми посетителями.
+Capabilities:
 
-Возможности:
+1. View the tape.
+Displays all root (no comments) in the order in which the last comment was added
+messages with messages of the most recent. It is enough to display messages with a number and text.
 
-1. Просмотр ленты.
-Отображаются все корневые сообщения(без комментариев) в порядке добавления последнего комментария
-сообщения начиная с самого свежего. Достаточно выводить уникальный номер сообщения и текст.
+2. Adding messages. Occurs on separate pages.
+It just adds text to the text field. After successful addition, the visitor returns to
+previous page.
 
-2. Добавление сообщения. Происходит на отдельной странице.
-Добавляется просто текст в текстовое поле. После успешного добавления посетитель возвращается на
-предыдущую страницу.
+3. View the comments of the posts. You can view from the root
+messages that can be posted and posted with any comment in village comments. The comment tree is ordered,
+tree layout with padding, tree branches sorted by comment date.
+For each post, print the comment number, text, and a link to view the thread from
+this comment.
 
-3. Просмотр комментариев сообщения. Просматривать можно начиная с корневого
-сообщения, а можно и начиная с любого комментария в дереве комментариев. Дерево комментариев упорядочено,
-оформляются в виде дерева с помощью отступов, ветки "дерева" отсортированы по дате комментария.
-Для каждого сообщения выводить уникальный номер комментария, текст и ссылку на просмотр ветки от
-данного комментария.
+4. Adding a comment to the comment tree. Under the message and to everyone
+comment on a frequently occurring link, by clicking on this block with a text field for
+entering comment text from the "add" and "cancel" buttons. "Add" - a comment is added
+to the right place in the comment hierarchy without reloading the page.
 
-4. Добавление комментария в дерево комментариев. Под сообщением и каждым
-комментарием присутствует ссылка, по нажатию на которую появляется блок с текстовым полем для
-ввода текста комментария с кнопкой "добавить" и "отмена". "Добавить" - комментарий добавляется
-в нужное место в иерархии комментариев без перезагрузки страницы.
-
-5. На каждой странице в шапке должно быть 2 ссылки: "главная страница" и "добавить сообщение".
-Сообщений в этой ленте может быть много(около тысячи), комментариев тоже много(например тысяча
-у одного сообщения). Нужно убедиться в работоспособности функционала при таком объёме данных.
+5. On each page in the header there should be 2: "the main link of the page" and "add a message".
+There can be a lot of messages in this feed (about), there are also a lot of comments (for example, thousands
+one message). You need to make sure that the functionality works when using digital data.
 
 
-Всё остальное по желанию.
+Everything else is optional.
